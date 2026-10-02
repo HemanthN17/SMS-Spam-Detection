@@ -1,64 +1,64 @@
 # 📩 SMS Spam Detection using NLP
 
-This project implements a **Spam Detection model** using **Natural Language Processing (NLP)** techniques in Python. The goal is to classify SMS messages as **Spam** or **Ham (Not Spam)** by applying text preprocessing, feature extraction, and machine learning models.  
-
-The dataset used is the **UCI SMS Spam Collection Dataset**, which contains over **5,000 labeled messages**.  
+A machine learning project that classifies SMS messages as Spam or Ham (Not Spam)
+using Natural Language Processing and machine learning techniques.  
 
 ---
 
 ## 🚀 Project Overview
 
-1. **Data Collection**  
-   - Dataset: [SMS Spam Collection Dataset (UCI Repository)](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection)  
-   - Contains SMS messages labeled as **spam** or **ham**.  
+1. Data Preprocessing
+- Loaded and cleaned the SMS dataset.
+- Removed unnecessary characters and processed the text.
+- Tokenized the messages and prepared them for feature extraction.
 
-2. **Data Preprocessing**  
-   - Removal of stopwords and punctuation.  
-   - Tokenization and stemming/lemmatization.  
-   - Conversion of text to **Bag of Words (BoW)** and **TF-IDF** features.  
+2. Feature Extraction
+- Used TF-IDF to convert text messages into numerical features.
 
-3. **Exploratory Data Analysis (EDA)**  
-   - Distribution of spam vs ham messages.  
-   - Message length analysis.  
-   - Visualization using **matplotlib** and **seaborn**.  
+3. Model Training
+- Trained a Naive Bayes classifier to classify messages as Spam or Ham.
 
-4. **Modeling**  
-   - Implemented a **Naïve Bayes Classifier** for text classification.  
-   - Compared performance on BoW and TF-IDF features.  
-
-5. **Evaluation**  
-   - Accuracy, Precision, Recall, and F1-Score used as evaluation metrics.  
-   - Confusion matrix plotted for performance visualization.  
+4. Model Evaluation
+- Evaluated the model using Accuracy, Precision, Recall, F1-Score, and Confusion Matrix.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
-- **Programming Language:** Python  
-- **Libraries:**  
-  - `pandas`, `numpy` – data handling  
-  - `matplotlib`, `seaborn` – visualization  
-  - `nltk` – text preprocessing  
-  - `scikit-learn` – machine learning models  
+- Python
+- Pandas
+- NumPy
+- NLTK
+- Scikit-learn
+- TF-IDF
+- Naive Bayes
+- Matplotlib
+- Seaborn 
 
 ---
 
 ## 📊 Results
 
-- Achieved strong classification performance with **Naïve Bayes**.  
-- Demonstrated the effectiveness of **TF-IDF vectorization** over raw Bag-of-Words.  
-- Model shows good generalization for detecting spam messages.  
+- Accuracy: 95.25%
+- Spam Precision: 68%
+- Spam Recall: 100%
+- Spam F1-Score: 81%
+- Weighted F1-Score: 96%
+
+The model was evaluated using accuracy, precision, recall, F1-score, and a confusion matrix. 
 
 ---
 
 ## 📂 Project Structure
 
 ```
-📁 SMS-Spam-Detection
-│── notebook.ipynb       # Jupyter Notebook with full analysis & code
-│── README.md            # Project documentation
-│── requirements.txt     # Dependencies
-│── smsspamcollection/   # Dataset folder
+SMS-Spam-Detection/
+│
+├── notebook.ipynb
+├── README.md
+├── requirements.txt
+├── yelp.csv
+└── smsspamcollection/
 ```
 
 ---
@@ -67,7 +67,7 @@ The dataset used is the **UCI SMS Spam Collection Dataset**, which contains over
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/Officialojih/SMS-Spam-Detection.git
+   git clone https://github.com/HemanthN17/SMS-Spam-Detection.git
    cd SMS-Spam-Detection
    ```
 
@@ -100,12 +100,17 @@ The dataset used is the **UCI SMS Spam Collection Dataset**, which contains over
 
 ## 🎯 Future Work
 
-- Experiment with advanced models (Logistic Regression, SVM, Random Forest).  
-- Use **Word Embeddings (Word2Vec, GloVe, BERT)** for improved feature representation.  
-- Build a **Streamlit Web App** for real-time SMS spam classification.  
+1. Experiment with additional machine learning classification algorithms.
+2. Improve text preprocessing and feature extraction.
+3. Build a web interface for real-time SMS spam prediction.
+4. Explore advanced NLP techniques and deep learning models.  
 
 ---
 
 ## 👨‍🎓 About Me  
 
-I’m **James Ojih (@Officialojih)**, a **Mechatronics Engineering graduate** with a passion for **Data Science, Machine Learning, AI, and Robotics**. This project reflects my journey into NLP and my ability to apply data-driven approaches to real-world problems.  
+I’m Hemanth Nirigitti, a Computer Science and Engineering graduate specializing in Artificial Intelligence and Machine Learning.
+
+I am interested in Python, Machine Learning, Natural Language Processing, Artificial Intelligence, and Web Development.
+
+This project helped me gain practical experience in NLP, text preprocessing, feature extraction, machine learning classification, and model evaluation. 
